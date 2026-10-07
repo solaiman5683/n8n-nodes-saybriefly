@@ -1,0 +1,54 @@
+{
+  "name": "n8n-nodes-saybriefly",
+  "version": "0.1.0",
+  "description": "n8n node for SayBriefly: read meeting recaps and to-dos, and create to-dos.",
+  "license": "MIT",
+  "homepage": "https://saybriefly.com",
+  "keywords": [
+    "n8n-community-node-package",
+    "saybriefly",
+    "meetings",
+    "todo",
+    "productivity"
+  ],
+  "author": {
+    "name": "SayBriefly",
+    "email": "inbox@saybriefly.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/solaiman5683/n8n-nodes-saybriefly.git"
+  },
+  "scripts": {
+    "build": "n8n-node build",
+    "build:watch": "tsc --watch",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "release": "n8n-node release",
+    "prepublishOnly": "n8n-node prerelease"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "strict": true,
+    "credentials": [
+      "dist/credentials/SayBrieflyApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/SayBriefly/SayBriefly.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "^0.51.3",
+    "eslint": "9.32.0",
+    "prettier": "3.6.2",
+    "release-it": "^21.1.0",
+    "typescript": "5.9.2"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
