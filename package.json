@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/solaiman5683/n8n-nodes-saybriefly.git"
+    "url": "git+https://github.com/solaiman5683/n8n-nodes-saybriefly.git"
   },
   "scripts": {
     "build": "n8n-node build",
@@ -50,5 +50,8 @@
   },
   "peerDependencies": {
     "n8n-workflow": "*"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
